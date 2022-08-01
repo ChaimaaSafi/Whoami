@@ -6,3 +6,54 @@ a {
 	color: #8b4513;
 	text-decoration: none;
 }
+.text {
+	color: transparent;
+	display: inline-block;
+	background-color: #5c5757;
+	position: relative;
+	-webkit-background-clip: text;
+	background-clip: text;
+}
+.scrollbar::-webkit-scrollbar {
+	display: none;
+}
+.transitiongroup {
+	animation: FideUp 1.5s ease-in-out;
+}
+
+@keyframes FideUp {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+.text::before {
+	content: attr(data-title);
+	background: #b5592a;
+	background: -webkit-linear-gradient(to right, #9ba6a5, #b5592a, #5c5757);
+	background: linear-gradient(to right, #9ba6a5, #b5592a, #5c5757);
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 0;
+	background-clip: text;
+	-webkit-background-clip: text;
+	transition: all 2s ease-in-out;
+	animation: text-animation 4s infinite;
+}
+
+@keyframes text-animation {
+	0% {
+		width: 0;
+	}
+	50% {
+		width: 100%;
+	}
+	100% {
+		width: 0;
+	}
+}

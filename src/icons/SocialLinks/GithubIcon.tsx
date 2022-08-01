@@ -18,7 +18,7 @@ function Github() {
 					stroke='none'
 					strokeWidth='1'
 					strokeLinecap='butt'
-					strokeLinejoin='none'
+					strokeLinejoin='inherit'
 					strokeMiterlimit='10'
 					strokeDasharray=''
 					strokeDashoffset='0'

@@ -10,8 +10,13 @@ module.exports = {
 				white: {
 					1: '#fffdfb',
 				},
-				grey: {
+				gray: {
 					1: '#606470',
+					2: '#323643',
+					3: '#5f6769',
+				},
+				orange: {
+					1: '#F66C22',
 				},
 			},
 		},

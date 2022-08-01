@@ -1,12 +1,15 @@
 import React from 'react'
 import Image from 'next/image'
-import profile from '../../public/assets/me.png'
-import { SKILLS } from '../utils/constants/Skills'
+import profile from '../../../public/assets/me.jpg'
+import { SKILLS } from '../../utils/constants/Skills'
 
-function about() {
+function About() {
 	return (
-		<section className='transitiongroup flex h-full w-full flex-col items-center justify-center  px-5  py-20  md:mx-auto md:max-w-[1200px]'>
-			<div className='flex flex-col justify-between space-x-5 md:flex-row'>
+		<section
+			id='about'
+			className='mx-auto flex   w-full max-w-[1200px] flex-col justify-center space-y-12 border-2  border-red-700 px-5'
+		>
+			<div className='flex flex-col items-center justify-between md:flex-row'>
 				<div className='flex flex-col text-justify md:w-3/5	'>
 					<h1
 						className='text mb-3 font-mono text-4xl font-semibold leading-10 tracking-widest text-gray-3'
@@ -28,17 +31,17 @@ function about() {
 						much more!
 					</p>
 				</div>
-				<div className='relative z-0 order-first mb-10 h-72 w-56  md:order-last md:mb-0 md:h-96 md:w-96'>
+				<div className='relative z-0 order-first mb-10 h-72 w-72 rounded-full border-8 border-dotted border-gray-1 md:order-last md:mb-0 md:h-96 md:w-96'>
 					<Image
 						src={profile}
 						alt='profile'
 						layout='fill'
 						objectFit='cover'
-						className='rounded-xl'
+						className='rounded-full'
 					/>
 				</div>
 			</div>
-			<div className='w-full'>
+			<div>
 				<span className='mr-3  text-base font-medium'>CHECK OUT MY</span>
 				<h1
 					className='text mb-3 font-mono text-2xl font-semibold leading-10 tracking-widest text-gray-3'
@@ -56,4 +59,4 @@ function about() {
 	)
 }
 
-export default about
+export default About

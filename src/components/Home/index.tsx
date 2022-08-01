@@ -1,11 +1,14 @@
 import React from 'react'
 import Image from 'next/image'
-import profile from '../../public/assets/me.png'
+import profile from '../../../public/assets/me.jpg'
 
-function home() {
+function HomePage() {
 	return (
-		<section className='transitiongroup flex  w-full items-center justify-center px-5 py-20   md:mx-auto md:max-w-[1200px]'>
-			<div className='flex flex-col items-center justify-between space-x-5 text-justify md:flex-row '>
+		<section
+			id='home'
+			className='flex  w-full items-center  justify-center border-2 border-green-700 px-5 md:mx-auto  md:max-w-[1200px] '
+		>
+			<div className='flex flex-col items-center justify-between text-justify md:flex-row'>
 				<div className='flex w-full flex-col space-y-6 md:w-3/5'>
 					<h1 className='text-2xl font-bold leading-[50px] text-gray-2 md:text-4xl'>
 						Hello,I&apos;m Chaimaa Safi.
@@ -22,8 +25,7 @@ function home() {
 						addressing problems with patience.
 					</p>
 				</div>
-
-				<div className='relative z-0 order-first mb-10 h-72 w-72 rounded-full border-2 border-gray-1 md:order-last md:mt-0 md:h-96 md:w-96 '>
+				<div className='relative z-0 order-first mb-10 h-72 w-72 rounded-full border-8 border-dotted border-gray-1 md:order-last md:mt-0 md:h-96 md:w-96 '>
 					<Image
 						src={profile}
 						alt='profile'
@@ -37,4 +39,4 @@ function home() {
 	)
 }
 
-export default home
+export default HomePage
