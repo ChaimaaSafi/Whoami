@@ -10,7 +10,7 @@ function home() {
 			<NextSeo title='Home' canonical={`${baseURL}/home`} />
 
 			<section className='transitiongroup flex h-screen w-full flex-col items-center overflow-auto px-5 py-20 lg:mx-auto lg:max-w-[1200px] lg:justify-center lg:py-0'>
-				<div className='flex w-full flex-col lg:flex-row lg:items-center lg:justify-center lg:space-x-5'>
+				<div className='flex w-full flex-col lg:flex-row lg:items-center lg:justify-between lg:space-x-5'>
 					<div className='order-last flex w-full flex-col space-y-6  lg:order-first lg:w-3/5 '>
 						<h1 className='text-2xl font-bold leading-[50px] text-gray-2 md:text-4xl'>
 							Hello,I&apos;m Chaimaa Safi.

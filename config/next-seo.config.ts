@@ -6,11 +6,11 @@ const SEO = {
 	openGraph: {
 		type: 'website',
 		locale: 'en_US',
-		url: 'https://www.chaimaasafi.com',
+		url: 'https://www.chaimaasafi.ma',
 		site_name: 'chaimaasafi',
 		images: [
 			{
-				url: 'https://www.chaimaasafi.com/assets/me.png',
+				url: 'https://www.chaimaasafi.ma/assets/me.png',
 				height: 1142,
 				width: 1418,
 			},

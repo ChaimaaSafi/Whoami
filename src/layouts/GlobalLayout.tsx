@@ -29,7 +29,7 @@ function GlobalLayout({ children }: { children: React.ReactNode }) {
 				{children}
 				{index !== 0 && (
 					<div
-						className='hidden lg:absolute lg:bottom-[80px] lg:right-[40px] lg:block lg:h-10 lg:w-10 lg:cursor-pointer '
+						className='hidden  lg:absolute lg:bottom-[80px] lg:right-[40px] lg:block lg:h-10 lg:w-10 lg:cursor-pointer '
 						onClick={previousPage}
 						aria-hidden='true'
 					>
@@ -38,7 +38,7 @@ function GlobalLayout({ children }: { children: React.ReactNode }) {
 				)}
 				{index !== LINKS.length - 1 && (
 					<div
-						className='hidden lg:absolute lg:bottom-[30px] lg:right-[40px] lg:block lg:h-10 lg:w-10 lg:cursor-pointer  '
+						className='hidden  lg:absolute lg:bottom-[30px] lg:right-[40px] lg:block lg:h-10 lg:w-10 lg:cursor-pointer '
 						onClick={nextPage}
 						aria-hidden='true'
 					>

@@ -20,7 +20,7 @@ function about() {
 						</h1>
 						<p className='text-lg leading-10 text-gray-2'>
 							Hey! I&apos;m
-							<span className='italic text-gray-2 underline underline-offset-2'>
+							<span className='px-2 italic text-gray-2 underline underline-offset-2'>
 								Chaimaa Safi
 							</span>
 							I&apos;m 24 years old and I&apos;m from Kenitra Morroco.My passion for
