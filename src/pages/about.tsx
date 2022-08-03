@@ -9,8 +9,8 @@ function about() {
 	return (
 		<>
 			<NextSeo title='About' canonical={`${baseURL}/about`} />
-			<section className='transitiongroup flex h-screen w-full flex-col items-center overflow-auto  border-2 border-red-700 px-5 py-20 lg:mx-auto lg:max-w-[1200px] lg:justify-center lg:py-0'>
-				<div className='flex w-full flex-col justify-between lg:flex-row lg:space-x-5'>
+			<section className='transitiongroup flex h-screen w-full flex-col items-center overflow-auto  px-5 py-20 lg:mx-auto lg:max-w-[1200px] lg:justify-center lg:py-0'>
+				<div className='flex w-full flex-col justify-between lg:flex-row lg:space-x-8'>
 					<div className='flex w-full flex-col text-justify lg:w-3/5	'>
 						<h1
 							className='text mb-3 font-mono text-3xl font-semibold leading-10 tracking-widest text-gray-3 md:text-4xl'

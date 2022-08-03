@@ -1,4 +1,4 @@
 module.exports = {
-	siteUrl: 'https://www.chaimaasafi.ma',
+	siteUrl: 'https://www.chaimaasafi.com',
 	generateRobotsTxt: true,
 }

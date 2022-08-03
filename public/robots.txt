@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://www.chaimaasafi.ma
+Host: https://www.chaimaasafi.com
 
 # Sitemaps
-Sitemap: https://www.chaimaasafi.ma/sitemap.xml
+Sitemap: https://www.chaimaasafi.com/sitemap.xml
