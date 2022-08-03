@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import profile from '../../../public/assets/me.jpg'
+import coding from '../../../public/assets/coding.png'
 import { SKILLS } from '../../utils/constants/Skills'
 
 function About() {
@@ -33,7 +33,7 @@ function About() {
 				</div>
 				<div className='relative z-0 order-first mb-10 h-72 w-72 rounded-full border-8 border-dotted border-gray-1 md:order-last md:mb-0 md:h-96 md:w-96'>
 					<Image
-						src={profile}
+						src={coding}
 						alt='profile'
 						layout='fill'
 						objectFit='cover'
@@ -50,8 +50,12 @@ function About() {
 					Skills
 				</h1>
 				<div className='mt-5 grid grid-flow-col grid-rows-3 items-center gap-4 rounded-xl  bg-white-1 p-5 shadow-lg md:mx-10 md:grid-rows-2'>
-					{SKILLS.map((skill, index) => {
-						return <h3 className='text-base font-medium text-gray-2 '>{skill}</h3>
+					{SKILLS.map(skill => {
+						return (
+							<h3 className='text-base font-medium text-gray-2' key={`id-${skill}`}>
+								{skill}
+							</h3>
+						)
 					})}
 				</div>
 			</div>

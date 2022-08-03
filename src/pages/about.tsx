@@ -1,58 +1,121 @@
 import React from 'react'
 import Image from 'next/image'
-import profile from '../../public/assets/me.png'
+import { NextSeo } from 'next-seo'
+import profile from '../../public/assets/aboutMe.png'
 import { SKILLS } from '../utils/constants/Skills'
+import { baseURL } from '../utils/constants/BaseURL'
 
 function about() {
 	return (
-		<section className='transitiongroup flex h-full w-full flex-col items-center justify-center  px-5  py-20  md:mx-auto md:max-w-[1200px]'>
-			<div className='flex flex-col justify-between space-x-5 md:flex-row'>
-				<div className='flex flex-col text-justify md:w-3/5	'>
+		<>
+			<NextSeo title='About' canonical={`${baseURL}/about`} />
+			<section className='transitiongroup flex h-screen w-full flex-col items-center overflow-auto  border-2 border-red-700 px-5 py-20 lg:mx-auto lg:max-w-[1200px] lg:justify-center lg:py-0'>
+				<div className='flex w-full flex-col justify-between lg:flex-row lg:space-x-5'>
+					<div className='flex w-full flex-col text-justify lg:w-3/5	'>
+						<h1
+							className='text mb-3 font-mono text-3xl font-semibold leading-10 tracking-widest text-gray-3 md:text-4xl'
+							data-title='About Me'
+						>
+							About Me
+						</h1>
+						<p className='text-lg leading-10 text-gray-2'>
+							Hey! I&apos;m
+							<span className='italic text-gray-2 underline underline-offset-2'>
+								Chaimaa Safi
+							</span>
+							I&apos;m 24 years old and I&apos;m from Kenitra Morroco.My passion for
+							programming and development started at the university, where I got my
+							master&apos;s degree in software enginnering, I started in the domain of
+							development about a year and I believe that experience comes after
+							practices.I am passionate about coding and solving problems through code,
+							and I am excited to work alongside other amazing programmers and learn so
+							much more!
+						</p>
+					</div>
+					<div className='relative order-first mb-10 h-96 w-full lg:order-last lg:mb-0 lg:h-96 lg:w-1/4'>
+						<Image
+							src={profile}
+							layout='fill'
+							alt='profile-alt'
+							blurDataURL={`/_next/image?url=${profile}&w=16&q=1`}
+							placeholder='blur'
+							className='rounded-xl'
+						/>
+					</div>
+				</div>
+				<div className='mt-10 w-full lg:mt-0'>
+					<span className='mr-3  text-base font-medium'>CHECK OUT MY</span>
 					<h1
-						className='text mb-3 font-mono text-4xl font-semibold leading-10 tracking-widest text-gray-3'
-						data-title='About Me'
+						className='text mb-3 font-mono text-3xl font-semibold leading-10 tracking-widest text-gray-3 md:text-2xl'
+						data-title='Skills'
 					>
-						About Me
+						Skills
 					</h1>
-					<p className='text-lg leading-10 text-gray-2'>
-						Hey! I&apos;m{' '}
-						<span className='italic text-gray-2 underline underline-offset-2'>
-							Chaimaa Safi
-						</span>{' '}
-						,I&apos;m 24 years old and I&apos;m from Kenitra Morroco.My passion for
-						programming and development started at the university, where I got my
-						master&apos;s degree in software enginnering, I started in the domain of
-						development about a year and I believe that experience comes after
-						practices.I am passionate about coding and solving problems through code,
-						and I am excited to work alongside other amazing programmers and learn so
-						much more!
-					</p>
+					<div className='mt-5 grid grid-flow-col grid-rows-3 items-center gap-4 rounded-xl  bg-white-1 p-5 shadow-lg md:mx-10 md:grid-rows-2'>
+						{SKILLS.map(skill => {
+							return (
+								<h3 className='text-base font-medium text-gray-2' key={`id-${skill}`}>
+									{skill}
+								</h3>
+							)
+						})}
+					</div>
 				</div>
-				<div className='relative z-0 order-first mb-10 h-72 w-56  md:order-last md:mb-0 md:h-96 md:w-96'>
-					<Image
-						src={profile}
-						alt='profile'
-						layout='fill'
-						objectFit='cover'
-						className='rounded-xl'
-					/>
+			</section>
+			{/* <section className='transitiongroup flex h-screen w-full flex-col items-center px-5 py-48 md:pt-96  md:pb-[69rem] lg:mx-auto lg:max-w-[1200px] lg:justify-center lg:py-0 '>
+				<div className='flex w-full flex-col justify-between lg:flex-row lg:space-x-5'>
+					<div className='flex w-full flex-col text-justify lg:w-3/5	'>
+						<h1
+							className='text mb-3 font-mono text-3xl font-semibold leading-10 tracking-widest text-gray-3 md:text-4xl'
+							data-title='About Me'
+						>
+							About Me
+						</h1>
+						<p className='text-lg leading-10 text-gray-2'>
+							Hey! I&apos;m
+							<span className='italic text-gray-2 underline underline-offset-2'>
+								Chaimaa Safi
+							</span>
+							I&apos;m 24 years old and I&apos;m from Kenitra Morroco.My passion for
+							programming and development started at the university, where I got my
+							master&apos;s degree in software enginnering, I started in the domain of
+							development about a year and I believe that experience comes after
+							practices.I am passionate about coding and solving problems through code,
+							and I am excited to work alongside other amazing programmers and learn so
+							much more!
+						</p>
+					</div>
+					<div className='relative order-first mb-10 h-96 w-full lg:order-last lg:mb-0 lg:h-96 lg:w-1/4'>
+						<Image
+							src={profile}
+							layout='fill'
+							alt='profile-alt'
+							blurDataURL={`/_next/image?url=${profile}&w=16&q=1`}
+							placeholder='blur'
+							className='rounded-xl'
+						/>
+					</div>
 				</div>
-			</div>
-			<div className='w-full'>
-				<span className='mr-3  text-base font-medium'>CHECK OUT MY</span>
-				<h1
-					className='text mb-3 font-mono text-2xl font-semibold leading-10 tracking-widest text-gray-3'
-					data-title='Skills'
-				>
-					Skills
-				</h1>
-				<div className='mt-5 grid grid-flow-col grid-rows-3 items-center gap-4 rounded-xl  bg-white-1 p-5 shadow-lg md:mx-10 md:grid-rows-2'>
-					{SKILLS.map((skill, index) => {
-						return <h3 className='text-base font-medium text-gray-2 '>{skill}</h3>
-					})}
+				<div className='mt-10 w-full lg:mt-0'>
+					<span className='mr-3  text-base font-medium'>CHECK OUT MY</span>
+					<h1
+						className='text mb-3 font-mono text-3xl font-semibold leading-10 tracking-widest text-gray-3 md:text-2xl'
+						data-title='Skills'
+					>
+						Skills
+					</h1>
+					<div className='mt-5 grid grid-flow-col grid-rows-3 items-center gap-4 rounded-xl  bg-white-1 p-5 shadow-lg md:mx-10 md:grid-rows-2'>
+						{SKILLS.map(skill => {
+							return (
+								<h3 className='text-base font-medium text-gray-2' key={`id-${skill}`}>
+									{skill}
+								</h3>
+							)
+						})}
+					</div>
 				</div>
-			</div>
-		</section>
+			</section> */}
+		</>
 	)
 }
 

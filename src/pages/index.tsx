@@ -1,39 +1,45 @@
 import React from 'react'
 import Image from 'next/image'
+import { NextSeo } from 'next-seo'
 import profile from '../../public/assets/me.png'
+import { baseURL } from '../utils/constants/BaseURL'
 
 function home() {
 	return (
-		<section className='transitiongroup flex  w-full items-center justify-center px-5 py-20   md:mx-auto md:max-w-[1200px]'>
-			<div className='flex flex-col items-center justify-between space-x-5 text-justify md:flex-row '>
-				<div className='flex w-full flex-col space-y-6 md:w-3/5'>
-					<h1 className='text-2xl font-bold leading-[50px] text-gray-2 md:text-4xl'>
-						Hello,I&apos;m Chaimaa Safi.
-					</h1>
-					<h3 className='text-2xl font-semibold leading-[45px] text-gray-2 md:text-3xl'>
-						Front-End Web Developer passionate about creating interactive applications
-						and experiences on the web.{' '}
-					</h3>
-					<p className='text-lg leading-8 text-gray-2'>
-						I&apos;m a web developer at
-						<span className='mx-1 text-orange-1 hover:underline'>Obytes</span>.I enjoy
-						building everything from small business sites to rich interactive web
-						apps.When dealing with a project I pay attention to the smallest details
-						addressing problems with patience.
-					</p>
-				</div>
+		<>
+			<NextSeo title='Home' canonical={`${baseURL}/home`} />
 
-				<div className='relative z-0 order-first mb-10 h-72 w-72 rounded-full border-2 border-gray-1 md:order-last md:mt-0 md:h-96 md:w-96 '>
-					<Image
-						src={profile}
-						alt='profile'
-						layout='fill'
-						objectFit='cover'
-						className='rounded-full'
-					/>
+			<section className='transitiongroup flex h-screen w-full flex-col items-center overflow-auto px-5 py-20 lg:mx-auto lg:max-w-[1200px] lg:justify-center lg:py-0'>
+				<div className='flex w-full flex-col lg:flex-row lg:items-center lg:justify-center lg:space-x-5'>
+					<div className='order-last flex w-full flex-col space-y-6  lg:order-first lg:w-3/5 '>
+						<h1 className='text-2xl font-bold leading-[50px] text-gray-2 md:text-4xl'>
+							Hello,I&apos;m Chaimaa Safi.
+						</h1>
+						<h3 className='text-2xl font-semibold leading-[45px] text-gray-2 md:text-3xl'>
+							Front-End Web Developer passionate about creating interactive
+							applications and experiences on the web.{' '}
+						</h3>
+						<p className='text-justify text-lg leading-8 text-gray-2'>
+							I&apos;m a web developer at
+							<span className='mx-1 text-orange-1 hover:underline'>Obytes</span>.I
+							enjoy building everything from small business sites to rich interactive
+							web apps.When dealing with a project I pay attention to the smallest
+							details addressing problems with patience.
+						</p>
+					</div>
+
+					<div className='relative  mb-10 h-72 w-full justify-center rounded-full border-2 border-gray-1 md:h-[28rem] lg:order-last lg:mt-0 lg:h-96 lg:w-96'>
+						<Image
+							src={profile}
+							alt='profile'
+							layout='fill'
+							objectFit='cover'
+							className='rounded-full'
+						/>
+					</div>
 				</div>
-			</div>
-		</section>
+			</section>
+		</>
 	)
 }
 

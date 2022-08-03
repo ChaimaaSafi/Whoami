@@ -12,7 +12,7 @@ function GlobalLayout({ children }: { children: React.ReactNode }) {
 		return link.path === currentPath
 	})
 	const nextPage = () => {
-		if (index !== 2) {
+		if (index !== LINKS.length - 1) {
 			router.push(LINKS[index + 1].path)
 		}
 	}
@@ -23,22 +23,22 @@ function GlobalLayout({ children }: { children: React.ReactNode }) {
 	}
 
 	return (
-		<section className='relative flex flex-col  md:flex-row'>
+		<section className='relative flex h-screen flex-col  overflow-hidden md:flex-row'>
 			<Header currentPath={currentPath} />
-			<div className='flex h-full w-full flex-col items-center  justify-center md:h-screen'>
+			<div className='flex h-full w-full flex-col items-center overflow-auto lg:h-screen lg:justify-center'>
 				{children}
 				{index !== 0 && (
 					<div
-						className='absolute bottom-[80px] right-[40px] h-10 w-10 cursor-pointer '
+						className='hidden lg:absolute lg:bottom-[80px] lg:right-[40px] lg:block lg:h-10 lg:w-10 lg:cursor-pointer '
 						onClick={previousPage}
 						aria-hidden='true'
 					>
 						<UpArrow />
 					</div>
 				)}
-				{index !== 2 && (
+				{index !== LINKS.length - 1 && (
 					<div
-						className='absolute bottom-[30px] right-[40px] h-10 w-10 cursor-pointer  '
+						className='hidden lg:absolute lg:bottom-[30px] lg:right-[40px] lg:block lg:h-10 lg:w-10 lg:cursor-pointer  '
 						onClick={nextPage}
 						aria-hidden='true'
 					>

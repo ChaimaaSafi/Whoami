@@ -27,7 +27,7 @@ function Header({ currentPath }: { currentPath: string }) {
 				<div className='flex h-48 flex-col space-y-16 text-2xl font-medium leading-8'>
 					{LINKS.map(props => {
 						return (
-							<Link href={props.path}>
+							<Link href={props.path} key={`id-${props.path}`}>
 								<a
 									className={
 										currentPath === props.path
@@ -49,6 +49,7 @@ function Header({ currentPath }: { currentPath: string }) {
 								target='_blank'
 								rel='noopener noreferrer'
 								className='text-sm font-medium leading-[21px]'
+								key={`id-${props.path}}`}
 							>
 								<props.Icon />
 							</a>
