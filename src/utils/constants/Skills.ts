@@ -5,4 +5,6 @@ export const SKILLS = [
 	'Tailwindcss',
 	'Material UI',
 	'NextJs',
+	'Firebase',
+	'Axios',
 ]

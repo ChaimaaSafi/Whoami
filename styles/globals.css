@@ -20,7 +20,13 @@ a {
 .transitiongroup {
 	animation: FideUp 1.5s ease-in-out;
 }
+.gridContainer {
+	@apply bg-cover bg-no-repeat w-80 h-[320px]  rounded-md  text-[#FFF];
+}
 
+.gridTag {
+	@apply h-[320px] lg:h-full w-80 rounded-md px-4 opacity-0 flex flex-col items-center justify-center space-y-2 transition-all duration-500 group-hover:bg-black/40  group-hover:opacity-100;
+}
 @keyframes FideUp {
 	from {
 		opacity: 0;

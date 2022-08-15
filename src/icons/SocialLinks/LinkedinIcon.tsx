@@ -3,8 +3,8 @@ import React from 'react'
 function LinkedinIcon() {
 	return (
 		<svg
-			width='40'
-			height='40'
+			width='30'
+			height='30'
 			viewBox='0 0 21 21'
 			className='fill-[#7D7D7D]'
 			xmlns='http://www.w3.org/2000/svg'

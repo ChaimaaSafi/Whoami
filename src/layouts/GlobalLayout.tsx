@@ -27,24 +27,20 @@ function GlobalLayout({ children }: { children: React.ReactNode }) {
 			<Header currentPath={currentPath} />
 			<div className='flex h-full w-full flex-col items-center overflow-auto lg:h-screen lg:justify-center'>
 				{children}
-				{index !== 0 && (
-					<div
-						className='hidden  lg:absolute lg:bottom-[80px] lg:right-[40px] lg:block lg:h-10 lg:w-10 lg:cursor-pointer '
-						onClick={previousPage}
-						aria-hidden='true'
-					>
-						<UpArrow />
-					</div>
-				)}
-				{index !== LINKS.length - 1 && (
-					<div
-						className='hidden  lg:absolute lg:bottom-[30px] lg:right-[40px] lg:block lg:h-10 lg:w-10 lg:cursor-pointer '
-						onClick={nextPage}
-						aria-hidden='true'
-					>
-						<DownArrow />
-					</div>
-				)}
+				<button
+					className='hidden disabled:cursor-not-allowed disabled:opacity-20 lg:absolute lg:bottom-[80px] lg:right-[40px] lg:block lg:h-10 lg:w-10 lg:cursor-pointer '
+					onClick={previousPage}
+					disabled={index === 0}
+				>
+					<UpArrow />
+				</button>
+				<button
+					className='hidden disabled:cursor-not-allowed disabled:opacity-20 lg:absolute lg:bottom-[30px] lg:right-[40px] lg:block lg:h-10 lg:w-10 lg:cursor-pointer '
+					onClick={nextPage}
+					disabled={index === LINKS.length - 1}
+				>
+					<DownArrow />
+				</button>
 			</div>
 		</section>
 	)

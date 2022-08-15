@@ -6,8 +6,8 @@ function Github() {
 			xmlns='http://www.w3.org/2000/svg'
 			x='0px'
 			y='0px'
-			width='40'
-			height='40'
+			width='30'
+			height='30'
 			viewBox='0 0 172 172'
 			className='fill-[#7D7D7D]'
 		>

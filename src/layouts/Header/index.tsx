@@ -13,8 +13,8 @@ function Header({ currentPath }: { currentPath: string }) {
 	const [isOpen, setOpen] = useState(false)
 
 	return (
-		<section className='z-50 flex flex-row items-center justify-between  bg-white-1 shadow-lg md:h-screen md:w-full md:max-w-[275px]  md:flex-col md:space-y-28 md:rounded-r-lg md:p-10'>
-			<div className='w-28 md:w-full'>
+		<section className='z-50 flex flex-row items-center justify-between  bg-white-1 shadow-lg md:h-screen md:w-full md:max-w-[275px]  md:flex-col md:space-y-28  md:p-10'>
+			<div className='w-28 md:w-40'>
 				<Image src={logo} alt='logo' />
 			</div>
 			<nav
@@ -24,7 +24,7 @@ function Header({ currentPath }: { currentPath: string }) {
 						: 'hidden'
 				} md:flex md:h-full md:flex-col md:justify-between`}
 			>
-				<div className='flex h-48 flex-col space-y-16 text-2xl font-medium leading-8'>
+				<div className='flex h-48 flex-col space-y-12 text-lg font-medium leading-8'>
 					{LINKS.map(props => {
 						return (
 							<Link href={props.path} key={`id-${props.path}`}>
