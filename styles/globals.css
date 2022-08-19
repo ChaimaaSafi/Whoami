@@ -3,29 +3,18 @@
 @tailwind utilities;
 
 a {
-	color: #8b4513;
 	text-decoration: none;
 }
-.text {
-	color: transparent;
-	display: inline-block;
-	background-color: #5c5757;
-	position: relative;
-	-webkit-background-clip: text;
-	background-clip: text;
-}
+
 .scrollbar::-webkit-scrollbar {
 	display: none;
 }
 .transitiongroup {
 	animation: FideUp 1.5s ease-in-out;
 }
-.gridContainer {
-	@apply bg-cover bg-no-repeat w-80 h-[320px]  rounded-md  text-[#FFF];
-}
 
 .gridTag {
-	@apply h-[320px] lg:h-full w-80 rounded-md px-4 opacity-0 flex flex-col items-center justify-center space-y-2 transition-all duration-500 group-hover:bg-black/40  group-hover:opacity-100;
+	@apply h-full w-full rounded-md px-4 opacity-0 flex flex-col items-center justify-center space-y-2 transition-all duration-500 group-hover:bg-black/40  group-hover:opacity-100;
 }
 @keyframes FideUp {
 	from {
@@ -35,6 +24,15 @@ a {
 		opacity: 1;
 	}
 }
+.text {
+	color: transparent;
+	display: inline-block;
+	background-color: #5c5757;
+	position: relative;
+	-webkit-background-clip: text;
+	background-clip: text;
+}
+
 .text::before {
 	content: attr(data-title);
 	background: #b5592a;

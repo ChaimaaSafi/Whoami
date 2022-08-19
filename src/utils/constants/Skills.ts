@@ -6,5 +6,5 @@ export const SKILLS = [
 	'Material UI',
 	'NextJs',
 	'Firebase',
-	'Axios',
+	'Webflow',
 ]

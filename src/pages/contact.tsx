@@ -13,10 +13,10 @@ function contact() {
 					<div className='flex items-center justify-center '>
 						<MailIcon />
 					</div>
-					<h1 className=' mb-3 text-center font-mono text-3xl font-semibold  leading-[50px] text-gray-3  lg:text-4xl'>
+					<h1 className='mb-3 text-center font-mono text-xl font-semibold text-gray-3  dark:text-white-1 md:text-3xl  lg:text-4xl lg:leading-[50px]'>
 						Let&apos;s work together on your next project.
 					</h1>
-					<h1 className='text-center text-4xl text-[#8b4513] underline ring-offset-4'>
+					<h1 className='text-center text-2xl text-[#8b4513] underline ring-offset-4 md:text-4xl'>
 						<a href='mailto:hi@chaimaasafi.ma'>hi@chaimaasafi.ma</a>
 					</h1>
 				</div>

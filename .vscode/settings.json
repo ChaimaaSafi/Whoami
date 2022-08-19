@@ -1,0 +1,10 @@
+{
+	"files.autoSave": "onWindowChange",
+	"javascript.updateImportsOnFileMove.enabled": "prompt",
+	"editor.tabSize": 2,
+	"eslint.alwaysShowStatus": true,
+	"editor.formatOnSave": true,
+	"editor.codeActionsOnSave": {
+		"source.fixAll": true
+	}
+}

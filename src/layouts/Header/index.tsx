@@ -5,15 +5,11 @@ import { Spin as Hamburger } from 'hamburger-react'
 import logo from '../../../public/assets/logo.png'
 import { LINKS } from '../../utils/constants/Links'
 import { SOCIAL_LINKS } from '../../utils/constants/SocialLinks'
-import LinkedinIcon from '../../icons/SocialLinks/LinkedinIcon'
-import GithubIcon from '../../icons/SocialLinks/GithubIcon'
-import TwitterIcon from '../../icons/SocialLinks/TwitterIcon'
 
 function Header({ currentPath }: { currentPath: string }) {
 	const [isOpen, setOpen] = useState(false)
-
 	return (
-		<section className='z-50 flex flex-row items-center justify-between  bg-white-1 shadow-lg md:h-screen md:w-full md:max-w-[275px]  md:flex-col md:space-y-28  md:p-10'>
+		<section className='z-50 flex flex-row items-center justify-between  bg-white-1 shadow-lg dark:bg-[#222831] md:h-screen md:w-full md:max-w-[275px]  md:flex-col md:space-y-28  md:p-10'>
 			<div className='w-28 md:w-40'>
 				<Image src={logo} alt='logo' />
 			</div>
@@ -24,14 +20,14 @@ function Header({ currentPath }: { currentPath: string }) {
 						: 'hidden'
 				} md:flex md:h-full md:flex-col md:justify-between`}
 			>
-				<div className='flex h-48 flex-col space-y-12 text-lg font-medium leading-8'>
+				<div className='flex h-48 flex-col space-y-12 text-lg font-medium leading-8 text-[#8b4513] dark:text-white-1'>
 					{LINKS.map(props => {
 						return (
 							<Link href={props.path} key={`id-${props.path}`}>
 								<a
 									className={
 										currentPath === props.path
-											? 'leading-8 text-gray-1 underline underline-offset-4'
+											? 'leading-8 text-gray-1 underline underline-offset-4 dark:text-white-1'
 											: ''
 									}
 								>

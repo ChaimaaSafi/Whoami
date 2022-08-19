@@ -18,7 +18,7 @@ function about() {
 						>
 							About Me
 						</h1>
-						<p className='text-base leading-10 text-gray-2'>
+						<p className='text-base leading-10 text-gray-2 dark:text-white-1'>
 							Hey! I&apos;m Chaimaa Safi I&apos;m 24 years old and I&apos;m from
 							Kenitra Morroco. My passion for programming and development started at
 							the university, where I got my master&apos;s degree in software
@@ -42,19 +42,19 @@ function about() {
 				</div>
 				<div className='mt-10 w-full lg:mt-0'>
 					<h1
-						className='text mb-3 font-mono text-lg font-semibold leading-10 tracking-widest text-gray-3 md:text-xl'
-						data-title='Check Out My Skills	'
+						className='text mb-3 font-mono text-lg font-semibold leading-10 tracking-widest text-gray-3 md:text-xl '
+						data-title='Skills'
 					>
-						Check Out My Skills
+						Skills
 					</h1>
-					<div className='mt-5 grid grid-flow-col grid-rows-3 gap-4 md:grid-rows-2'>
+					<div className='mt-5 grid grid-flow-col grid-rows-4 gap-4 md:grid-rows-2'>
 						{SKILLS.map(skill => {
 							return (
 								<div
-									className='flex items-center space-x-3 text-base font-medium text-gray-2'
+									className='flex items-center space-x-3 text-base font-medium text-gray-2 dark:text-white-1'
 									key={`id-${skill}`}
 								>
-									<div className='h-2 w-2 rounded-full bg-gray-2' />
+									<div className='h-2 w-2 rounded-full bg-gray-2 dark:bg-[#fff]' />
 									<h3> {skill}</h3>
 								</div>
 							)
