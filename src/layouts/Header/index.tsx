@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Image from 'next/image'
+import Image from 'next/future/image'
 import Link from 'next/link'
 import { Spin as Hamburger } from 'hamburger-react'
 import logo from '../../../public/assets/logo.png'

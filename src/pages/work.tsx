@@ -1,15 +1,15 @@
 import React from 'react'
 import { NextSeo } from 'next-seo'
-import Image from 'next/image'
+import Image from 'next/future/image'
 import { baseURL } from '../utils/constants/BaseURL'
 import FortLogo from '../../public/assets/projects/1FortLogo.png'
-import QuoLogo from '../../public/assets/projects/QuoLogo.jpeg'
+import QuoLogo from '../../public/assets/projects/QuoLogo.png'
 
 function work() {
 	return (
 		<>
 			<NextSeo title='Work' canonical={`${baseURL}/work`} />
-			<section className='transitiongroup  flex w-full flex-col  overscroll-auto  px-5  py-10 md:mx-auto md:max-w-[1200px]'>
+			<section className='transitiongroup  flex w-full flex-col  overscroll-auto  px-5  pt-48 pb-20 md:mx-auto md:max-w-[1200px]'>
 				<div className='mb-10 flex flex-col'>
 					<h1
 						className='text mb-3 font-mono text-lg font-semibold leading-10 tracking-widest text-gray-3'
@@ -63,7 +63,11 @@ function work() {
 						<div className='flex w-full flex-col space-y-8 lg:w-1/2'>
 							<div className='flex items-center space-x-5'>
 								<div className='flex w-16  '>
-									<Image src={QuoLogo} alt='Quo-logo' className='rounded-lg' />
+									<Image
+										src={QuoLogo}
+										alt='Quo-logo'
+										className='rounded-lg bg-[#222831]'
+									/>
 								</div>
 								<div>
 									<h2 className='text-lg font-medium dark:text-white-1 md:text-xl'>

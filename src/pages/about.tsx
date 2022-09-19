@@ -1,7 +1,7 @@
 import React from 'react'
-import Image from 'next/image'
+import Image from 'next/future/image'
 import { NextSeo } from 'next-seo'
-import profile from '../../public/assets/aboutMe.png'
+import profile from '../../public/assets/chaimaa.jpg'
 import { SKILLS } from '../utils/constants/Skills'
 import { baseURL } from '../utils/constants/BaseURL'
 
@@ -10,7 +10,7 @@ function about() {
 		<>
 			<NextSeo title='About' canonical={`${baseURL}/about`} />
 			<section className='transitiongroup flex h-screen w-full flex-col items-center overflow-auto  px-5 py-20 lg:mx-auto lg:max-w-[1200px] lg:justify-center lg:py-0'>
-				<div className='flex w-full flex-col justify-between lg:flex-row lg:space-x-8'>
+				<div className='flex w-full flex-col items-center justify-between lg:flex-row lg:space-x-8'>
 					<div className='flex w-full flex-col text-justify lg:w-3/5	'>
 						<h1
 							className='text mb-3 font-mono text-lg font-semibold leading-10 tracking-widest text-gray-3 md:text-xl'
@@ -28,19 +28,18 @@ function about() {
 							programmers and learn so much more!
 						</p>
 					</div>
-					<div className='relative order-first mb-10 h-96 w-full lg:order-last lg:mb-0 lg:h-96 lg:w-1/4'>
+					<div className='relative order-first mb-10 h-96 w-full lg:order-last lg:mb-0 lg:h-80 lg:w-1/4'>
 						<Image
 							src={profile}
-							layout='fill'
+							fill
 							alt='profile-alt'
-							objectFit='cover'
 							blurDataURL={profile.blurDataURL}
 							placeholder='blur'
-							className='rounded-xl'
+							className='rounded-xl object-cover'
 						/>
 					</div>
 				</div>
-				<div className='mt-10 w-full lg:mt-0'>
+				<div className='mt-10 w-full lg:mt-20'>
 					<h1
 						className='text mb-3 font-mono text-lg font-semibold leading-10 tracking-widest text-gray-3 md:text-xl '
 						data-title='Skills'

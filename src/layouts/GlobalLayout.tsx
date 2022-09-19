@@ -34,37 +34,44 @@ function GlobalLayout({ children }: { children: React.ReactNode }) {
 	}, [])
 
 	if (!mounted) return null
-
 	return (
 		<section className='relative flex h-screen flex-col  overflow-hidden md:flex-row'>
 			<Header currentPath={currentPath} />
 			<div className='flex h-full w-full flex-col items-center overflow-auto dark:bg-[#222831] lg:h-screen lg:justify-center'>
-				<div className='fixed top-0 right-[4%] cursor-pointer py-5 lg:mx-auto lg:max-w-[1200px]'>
+				<div className='sticky top-0 z-40 flex w-full cursor-pointer justify-end  bg-white-1 p-3 dark:bg-transparent lg:mx-auto lg:max-w-[1200px]'>
 					{currentTheme === 'dark' ? (
-						<button onClick={() => setTheme('light')}>
+						<div
+							onClick={() => setTheme('light')}
+							className='flex h-10 w-10 items-center  justify-center rounded-full align-middle hover:bg-gray-5'
+						>
 							<Sun />
-						</button>
+						</div>
 					) : (
-						<button onClick={() => setTheme('dark')}>
+						<div
+							onClick={() => setTheme('dark')}
+							className='flex h-10 w-10 items-center justify-center rounded-full hover:bg-gray-4'
+						>
 							<Moon />
-						</button>
+						</div>
 					)}
 				</div>
 				{children}
-				<button
-					className='hidden disabled:cursor-not-allowed disabled:opacity-20 lg:absolute lg:bottom-[80px] lg:right-[40px] lg:block lg:h-10 lg:w-10 lg:cursor-pointer '
-					onClick={previousPage}
-					disabled={index === 0}
-				>
-					<UpArrow />
-				</button>
-				<button
-					className='hidden disabled:cursor-not-allowed disabled:opacity-20 lg:absolute lg:bottom-[30px] lg:right-[40px] lg:block lg:h-10 lg:w-10 lg:cursor-pointer '
-					onClick={nextPage}
-					disabled={index === LINKS.length - 1}
-				>
-					<DownArrow />
-				</button>
+				<div className='flex w-full justify-end pr-8 lg:flex-col lg:items-end'>
+					<button
+						className='-rotate-90 disabled:cursor-not-allowed disabled:opacity-20 lg:rotate-0 lg:cursor-pointer '
+						onClick={previousPage}
+						disabled={index === 0}
+					>
+						<UpArrow />
+					</button>
+					<button
+						className='-rotate-90 disabled:cursor-not-allowed disabled:opacity-20  lg:order-last  lg:rotate-0 lg:cursor-pointer '
+						onClick={nextPage}
+						disabled={index === LINKS.length - 1}
+					>
+						<DownArrow />
+					</button>
+				</div>
 			</div>
 		</section>
 	)

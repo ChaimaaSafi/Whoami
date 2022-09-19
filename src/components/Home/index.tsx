@@ -1,5 +1,5 @@
 import React from 'react'
-import Image from 'next/image'
+import Image from 'next/future/image'
 import profile from '../../../public/assets/me.jpg'
 
 function HomePage() {
@@ -26,13 +26,7 @@ function HomePage() {
 					</p>
 				</div>
 				<div className='relative z-0 order-first mb-10 h-72 w-72 rounded-full border-8 border-dotted border-gray-1 md:order-last md:mt-0 md:h-96 md:w-96 '>
-					<Image
-						src={profile}
-						alt='profile'
-						layout='fill'
-						objectFit='cover'
-						className='rounded-full'
-					/>
+					<Image src={profile} alt='profile' fill className='rounded-full' />
 				</div>
 			</div>
 		</section>

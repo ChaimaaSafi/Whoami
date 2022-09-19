@@ -1,5 +1,5 @@
 import React from 'react'
-import Image from 'next/image'
+import Image from 'next/future/image'
 import { NextSeo } from 'next-seo'
 import Link from 'next/link'
 import profile from '../../public/assets/me.png'
@@ -33,15 +33,17 @@ function home() {
 								<span> About me</span>
 							</div>
 						</Link>
+						<div className='flex items-center space-x-3 text-base font-normal text-gray-1 hover:cursor-pointer hover:text-[#8b4513]  dark:text-white-1'>
+							<Arrow />
+							<span> My resume</span>
+						</div>
 					</div>
-
 					<div className='relative  mb-10 h-72 w-full justify-center rounded-full border-2 border-gray-1 md:h-[28rem] lg:order-last lg:mt-0 lg:h-96 lg:w-96'>
 						<Image
 							src={profile}
 							alt='profile'
-							layout='fill'
-							objectFit='cover'
-							className='rounded-full'
+							fill
+							className='rounded-full object-cover'
 						/>
 					</div>
 				</div>

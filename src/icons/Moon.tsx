@@ -3,17 +3,15 @@ import React from 'react'
 function Moon() {
 	return (
 		<svg
+			width='18'
+			height='18'
+			viewBox='0 0 18 18'
+			fill='none'
 			xmlns='http://www.w3.org/2000/svg'
-			className='h-10 w-10'
-			fill='#000'
-			viewBox='0 0 39 30'
-			stroke='currentColor'
-			strokeWidth={2}
 		>
 			<path
-				strokeLinecap='round'
-				strokeLinejoin='round'
-				d='M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z'
+				d='M8.34393 9.65726C5.73188 7.04353 5.03088 3.26803 6.18766 0C4.92389 0.447057 3.72908 1.14627 2.71923 2.15615C-0.906409 5.78149 -0.906409 11.658 2.71923 15.2816C6.34304 18.9052 12.2182 18.9071 15.8436 15.2816C16.8571 14.2718 17.5546 13.077 18 11.8133C14.7337 12.97 10.9562 12.2691 8.34393 9.65726Z'
+				fill='#1D1D1B'
 			/>
 		</svg>
 	)
