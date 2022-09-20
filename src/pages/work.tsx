@@ -9,7 +9,7 @@ function work() {
 	return (
 		<>
 			<NextSeo title='Work' canonical={`${baseURL}/work`} />
-			<section className='transitiongroup  flex w-full flex-col  overscroll-auto  px-5  pt-48 pb-20 md:mx-auto md:max-w-[1200px]'>
+			<section className='transitiongroup  flex w-full flex-col  overscroll-auto  px-5 py-20 md:mx-auto md:max-w-[1200px] md:pt-48'>
 				<div className='mb-10 flex flex-col'>
 					<h1
 						className='text mb-3 font-mono text-lg font-semibold leading-10 tracking-widest text-gray-3'
@@ -25,7 +25,7 @@ function work() {
 					<div className='flex flex-col items-center justify-between lg:flex-row lg:space-x-6 '>
 						<div className='flex w-full flex-col space-y-8 lg:w-1/2'>
 							<div className='flex items-center space-x-5'>
-								<div className='flex w-16 '>
+								<div className='flex w-16'>
 									<Image src={FortLogo} alt='1Fort-logo' />
 								</div>
 								<div>
@@ -48,7 +48,7 @@ function work() {
 								<h3 className='text-justify text-base '>CSS</h3>
 							</div>
 						</div>
-						<div className=" group relative order-first mb-8 h-40 w-full scale-100 rounded-xl border-4 border-gray-2 bg-[url('/assets/projects/1Fort.png')] bg-cover bg-no-repeat text-[#FFF] md:h-64 lg:order-last lg:row-start-1 lg:row-end-4  lg:mb-0 lg:w-2/5">
+						<div className="group relative order-first mb-8 h-40 w-full scale-100 rounded-xl border-4 border-gray-2 bg-[url('/assets/projects/1Fort.png')] bg-cover bg-no-repeat text-[#FFF] md:h-64 lg:order-last lg:row-start-1 lg:row-end-4  lg:mb-0 lg:w-2/5">
 							<div className='gridTag'>
 								<p className='text-base font-semibold md:text-xl '>View Project</p>
 							</div>

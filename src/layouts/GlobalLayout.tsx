@@ -38,7 +38,7 @@ function GlobalLayout({ children }: { children: React.ReactNode }) {
 		<section className='relative flex h-screen flex-col  overflow-hidden md:flex-row'>
 			<Header currentPath={currentPath} />
 			<div className='flex h-full w-full flex-col items-center overflow-auto dark:bg-[#222831] lg:h-screen lg:justify-center'>
-				<div className='sticky top-0 z-40 flex w-full cursor-pointer justify-end  bg-white-1 p-3 dark:bg-transparent lg:mx-auto lg:max-w-[1200px]'>
+				<div className='top-0 z-40 hidden w-full cursor-pointer justify-end bg-white-1 p-3  dark:bg-transparent md:sticky md:flex lg:mx-auto lg:max-w-[1200px]'>
 					{currentTheme === 'dark' ? (
 						<div
 							onClick={() => setTheme('light')}
