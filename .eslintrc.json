@@ -52,7 +52,8 @@
 			"button": true,
 			"submit": true,
 			"reset": true
-		}]
+		}],
+		"react/require-default-props": "off"
 	},
 	"settings": {
 		"import/resolver": {

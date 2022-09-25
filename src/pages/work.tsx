@@ -26,7 +26,12 @@ function work() {
 						<div className='flex w-full flex-col space-y-8 lg:w-1/2'>
 							<div className='flex items-center space-x-5'>
 								<div className='flex w-16'>
-									<Image src={FortLogo} alt='1Fort-logo' />
+									<Image
+										src={FortLogo}
+										alt='1Fort-logo'
+										placeholder='blur'
+										className='object-fill'
+									/>
 								</div>
 								<div>
 									<h2 className='text-lg font-medium dark:text-white-1 md:text-xl'>
@@ -67,6 +72,7 @@ function work() {
 										src={QuoLogo}
 										alt='Quo-logo'
 										className='rounded-lg bg-[#222831]'
+										placeholder='blur'
 									/>
 								</div>
 								<div>

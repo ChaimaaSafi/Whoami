@@ -38,14 +38,12 @@ function home() {
 							<span> My resume</span>
 						</div>
 					</div>
-					<div className='relative  mb-10 h-72 w-full justify-center rounded-full border-2 border-gray-1 md:h-[28rem] lg:order-last lg:mt-0 lg:h-96 lg:w-96'>
-						<Image
-							src={profile}
-							alt='profile'
-							fill
-							className='rounded-full object-cover'
-						/>
-					</div>
+					<Image
+						src={profile}
+						alt='profile'
+						className='mb-10 h-72 w-full justify-center rounded-full border-2 border-gray-1 object-cover md:h-[28rem] lg:order-last lg:mt-0 lg:h-96 lg:w-96'
+						placeholder='blur'
+					/>
 				</div>
 			</section>
 		</>

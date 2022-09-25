@@ -31,9 +31,7 @@ function about() {
 					<div className='relative order-first mb-10 h-96 w-full lg:order-last lg:mb-0 lg:h-80 lg:w-1/4'>
 						<Image
 							src={profile}
-							fill
 							alt='profile-alt'
-							blurDataURL={profile.blurDataURL}
 							placeholder='blur'
 							className='rounded-xl object-cover'
 						/>
