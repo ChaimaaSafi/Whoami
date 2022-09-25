@@ -32,7 +32,12 @@ function About() {
 					</p>
 				</div>
 				<div className='relative z-0 order-first mb-10 h-72 w-72 rounded-full border-8 border-dotted border-gray-1 md:order-last md:mb-0 md:h-96 md:w-96'>
-					<Image src={coding} alt='profile' fill className='rounded-full' />
+					<Image
+						src={coding}
+						alt='profile'
+						className='rounded-full object-cover'
+						placeholder='blur'
+					/>
 				</div>
 			</div>
 			<div>
