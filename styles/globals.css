@@ -9,13 +9,7 @@ a {
 .scrollbar::-webkit-scrollbar {
 	display: none;
 }
-.transitiongroup {
-	animation: FideUp 1.5s ease-in-out;
-}
 
-.gridTag {
-	@apply h-full w-full rounded-md px-4 opacity-0 flex flex-col items-center justify-center space-y-2 transition-all duration-500 group-hover:bg-black/40  group-hover:opacity-100;
-}
 @keyframes FideUp {
 	from {
 		opacity: 0;

@@ -35,7 +35,13 @@ function home() {
 						</Link>
 						<div className='flex items-center space-x-3 text-base font-normal text-gray-1 hover:cursor-pointer hover:text-[#8b4513]  dark:text-white-1'>
 							<Arrow />
-							<span> My resume</span>
+							<a
+								href='/assets/resume/cv-safi-chaimmaa.pdf'
+								target='_blank'
+								rel='noopener noreferrer'
+							>
+								<span> My resume</span>
+							</a>
 						</div>
 					</div>
 					<Image
