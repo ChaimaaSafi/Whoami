@@ -9,6 +9,9 @@ a {
 .scrollbar::-webkit-scrollbar {
 	display: none;
 }
+.transitiongroup {
+	animation: FideUp 1.5s ease-in-out;
+}
 
 @keyframes FideUp {
 	from {

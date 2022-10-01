@@ -11,7 +11,7 @@ function work() {
 	return (
 		<>
 			<NextSeo title='Work' canonical={`${baseURL}/work`} />
-			<section className='flex w-full flex-col  overscroll-auto  px-3 py-20 md:mx-auto md:max-w-[1200px] lg:mt-28'>
+			<section className='transitiongroup flex w-full flex-col  overscroll-auto  px-3 py-20 md:mx-auto md:max-w-[1200px] lg:mt-28'>
 				<div className='mb-5 flex flex-col'>
 					<h1
 						className='text mb-3 font-mono text-lg font-semibold leading-10 tracking-widest text-gray-3'
@@ -63,7 +63,7 @@ function work() {
 								placeholder='blur'
 							/>
 							<div className='absolute top-0 left-0  flex h-0 w-full flex-col items-center justify-center rounded-lg bg-black/40 opacity-0 duration-500 group-hover:h-full group-hover:opacity-100'>
-								<a href='https://quo.com/' target='_blank' rel='noreferrer'>
+								<a href='https://www.1fort.com/' target='_blank' rel='noreferrer'>
 									<h1 className='text-2xl text-white-1'>View Project</h1>
 								</a>
 							</div>

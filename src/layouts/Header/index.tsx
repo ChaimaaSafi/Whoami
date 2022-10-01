@@ -47,6 +47,7 @@ function Header({ currentPath }: { currentPath: string }) {
 								className='text-sm font-medium leading-[21px]'
 								key={`id-${props.path}}`}
 							>
+								<span className='hidden'>{props.path}</span>
 								<props.Icon />
 							</a>
 						)

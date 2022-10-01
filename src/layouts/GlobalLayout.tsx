@@ -62,6 +62,7 @@ function GlobalLayout({ children }: { children: React.ReactNode }) {
 						onClick={previousPage}
 						disabled={index === 0}
 					>
+						<span className='hidden'>Up</span>
 						<UpArrow />
 					</button>
 					<button
@@ -69,6 +70,7 @@ function GlobalLayout({ children }: { children: React.ReactNode }) {
 						onClick={nextPage}
 						disabled={index === LINKS.length - 1}
 					>
+						<span className='hidden'>Down</span>
 						<DownArrow />
 					</button>
 				</div>
