@@ -10,9 +10,9 @@ function Header({ currentPath }: { currentPath: string }) {
 	const [isOpen, setOpen] = useState(false)
 	return (
 		<section className='z-50 flex flex-row items-center justify-between  bg-white-1 shadow-lg dark:bg-[#222831] md:h-screen md:w-full md:max-w-[275px]  md:flex-col md:space-y-28  md:p-10'>
-			<div className='w-28 md:w-40'>
-				<Image src={logo} alt='logo' />
-			</div>
+			<Link href='/' aria-label='home-page'>
+				<Image src={logo} alt='logo' className='w-28 cursor-pointer md:w-40' />
+			</Link>
 			<nav
 				className={`${
 					isOpen

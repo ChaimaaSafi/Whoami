@@ -28,14 +28,12 @@ function about() {
 							programmers and learn so much more!
 						</p>
 					</div>
-					<div className='relative order-first mb-10 h-96 w-full lg:order-last lg:mb-0 lg:h-80 lg:w-1/4'>
-						<Image
-							src={profile}
-							alt='profile-alt'
-							placeholder='blur'
-							className='rounded-xl object-cover'
-						/>
-					</div>
+					<Image
+						src={profile}
+						alt='profile-alt'
+						placeholder='blur'
+						className='order-first mb-10 h-96 w-full rounded-xl object-contain md:h-auto lg:order-last lg:mb-0 lg:w-1/4'
+					/>
 				</div>
 				<div className='mt-10 w-full lg:mt-20'>
 					<h1
