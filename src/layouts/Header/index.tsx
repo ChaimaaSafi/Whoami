@@ -46,8 +46,8 @@ function Header({ currentPath }: { currentPath: string }) {
 								rel='noopener noreferrer'
 								className='text-sm font-medium leading-[21px]'
 								key={`id-${props.path}}`}
+								aria-label='socialLinks'
 							>
-								<span className='hidden'>{props.path}</span>
 								<props.Icon />
 							</a>
 						)

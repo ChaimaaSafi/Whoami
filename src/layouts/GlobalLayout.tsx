@@ -61,16 +61,16 @@ function GlobalLayout({ children }: { children: React.ReactNode }) {
 						className='-rotate-90 disabled:cursor-not-allowed disabled:opacity-20 lg:rotate-0 lg:cursor-pointer '
 						onClick={previousPage}
 						disabled={index === 0}
+						aria-label='upButton'
 					>
-						<span className='hidden'>Up</span>
 						<UpArrow />
 					</button>
 					<button
 						className='-rotate-90 disabled:cursor-not-allowed disabled:opacity-20  lg:order-last  lg:rotate-0 lg:cursor-pointer '
 						onClick={nextPage}
 						disabled={index === LINKS.length - 1}
+						aria-label='downButton'
 					>
-						<span className='hidden'>Down</span>
 						<DownArrow />
 					</button>
 				</div>
