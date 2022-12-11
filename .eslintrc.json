@@ -48,11 +48,14 @@
 		"react/style-prop-object": "off",
 		"import/prefer-default-export": "off",
 		"jsx-a11y/anchor-is-valid": "off",
-		"react/button-has-type": [0, {
-			"button": true,
-			"submit": true,
-			"reset": true
-		}],
+		"react/button-has-type": [
+			0,
+			{
+				"button": true,
+				"submit": true,
+				"reset": true
+			}
+		],
 		"react/require-default-props": "off"
 	},
 	"settings": {
