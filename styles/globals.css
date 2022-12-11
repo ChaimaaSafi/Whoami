@@ -13,6 +13,11 @@ a {
 	animation: FideUp 1.5s ease-in-out;
 }
 
+h3,
+p {
+	user-select: none;
+}
+
 @keyframes FideUp {
 	from {
 		opacity: 0;

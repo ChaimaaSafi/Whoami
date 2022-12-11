@@ -9,14 +9,14 @@ import { SOCIAL_LINKS } from '../../utils/constants/SocialLinks'
 function Header({ currentPath }: { currentPath: string }) {
 	const [isOpen, setOpen] = useState(false)
 	return (
-		<section className='z-50 flex flex-row items-center justify-between  bg-white-1 shadow-lg dark:bg-[#222831] md:h-screen md:w-full md:max-w-[275px]  md:flex-col md:space-y-28  md:p-10'>
+		<section className='z-50 flex flex-row items-center justify-between bg-white-1 shadow-lg dark:bg-[#222831] md:h-screen  md:w-full  md:max-w-[275px] md:flex-col  md:space-y-28 md:p-10'>
 			<Link href='/' aria-label='home-page'>
 				<Image src={logo} alt='logo' className='w-28 cursor-pointer md:w-40' />
 			</Link>
 			<nav
 				className={`${
 					isOpen
-						? 'fixed top-0 flex h-screen w-full flex-col items-center justify-between bg-white-1  py-32 text-center transition-all  delay-500'
+						? 'fixed top-0 flex h-screen w-full flex-col items-center justify-between bg-white-1 py-32 text-center transition-all delay-500  dark:bg-[#222831] md:flex md:h-full md:w-auto md:flex-col md:justify-between'
 						: 'hidden'
 				} md:flex md:h-full md:flex-col md:justify-between`}
 			>

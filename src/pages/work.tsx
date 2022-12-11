@@ -6,12 +6,14 @@ import FortLogo from '../../public/assets/projects/1FortLogo.png'
 import Fort from '../../public/assets/projects/1Fort.png'
 import QuoLogo from '../../public/assets/projects/QuoLogo.png'
 import Quo from '../../public/assets/projects/Quo.png'
+import Obytes from '../../public/assets/projects/Obytes.png'
+import logoObytes from '../../public/assets/projects/logoObytes.png'
 
 function work() {
 	return (
 		<>
 			<NextSeo title='Work' canonical={`${baseURL}/work`} />
-			<section className='transitiongroup flex w-full flex-col  overscroll-auto  px-3 py-20 md:mx-auto md:max-w-[1200px] lg:mt-28'>
+			<section className='transitiongroup  flex w-full flex-col overscroll-auto  px-3 py-20 md:mx-auto md:max-w-[1200px] lg:mt-56 xl:mt-[30rem]'>
 				<div className='mb-5 flex flex-col'>
 					<h1
 						className='text mb-3 font-mono text-lg font-semibold leading-10 tracking-widest text-gray-3'
@@ -112,6 +114,53 @@ function work() {
 								<h3 className='text-justify text-base '>MaterialUI</h3>
 								<h3 className='text-justify text-base '>Firebase</h3>
 							</div>
+						</div>
+					</div>
+				</div>
+				<div className='flex flex-col items-center justify-between lg:flex-row lg:space-x-6 '>
+					<div className='mt-8 flex w-full flex-col space-y-8 lg:w-1/2'>
+						<div className='flex  items-stretch space-x-5'>
+							<div className='flex w-20 shadow-sm'>
+								<Image
+									src={logoObytes}
+									alt='Obytes-logo'
+									placeholder='blur'
+									className='object-fill'
+								/>
+							</div>
+							<div>
+								<h2 className='text-lg font-medium dark:text-white-1 md:text-xl'>
+									Obytes
+								</h2>
+								<p className='text-base dark:text-white-1 md:text-lg'>
+									Let&lsquo;s Make Your Great Idea A Reality!{' '}
+								</p>
+							</div>
+						</div>
+						<p className='text-justify text-base text-gray-2 dark:text-white-1'>
+							A team of world-class unmistakable creatives and technologists, creating
+							new ways to build businesses and brands by unleashing the power of
+							creativity
+						</p>
+						<div className='flex space-x-8 text-gray-3 dark:text-white-1'>
+							<h3 className='text-justify text-base '>NextJs</h3>
+							<h3 className='text-justify text-base '>TypeScript</h3>
+							<h3 className='text-justify text-base '>Axios</h3>
+							<h3 className='text-justify text-base '>TailwindCSS</h3>
+							<h3 className='text-justify text-base '>ContentLayer</h3>
+						</div>
+					</div>
+					<div className='group relative order-first my-7 h-40 w-full md:order-last md:h-64 lg:w-2/5'>
+						<Image
+							src={Obytes}
+							alt='Obytes-logo'
+							className='h-full w-full rounded-lg object-fill '
+							placeholder='blur'
+						/>
+						<div className='absolute top-0 left-0  flex h-0 w-full flex-col items-center justify-center rounded-lg bg-black/40 opacity-0 duration-500 group-hover:h-full group-hover:opacity-100'>
+							<a href='https://www.obytes.com/about' target='_blank' rel='noreferrer'>
+								<h1 className='text-2xl text-white-1'>View Project</h1>
+							</a>
 						</div>
 					</div>
 				</div>
