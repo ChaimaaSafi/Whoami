@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/future/image'
 import { NextSeo } from 'next-seo'
-import profile from '../../public/assets/chaimaa.jpg'
+import profile from '../../public/assets/chaimaa.png'
 import { SKILLS } from '../utils/constants/Skills'
 import { baseURL } from '../utils/constants/BaseURL'
 
@@ -32,7 +32,7 @@ function about() {
 						src={profile}
 						alt='profile-alt'
 						placeholder='blur'
-						className='order-first mb-10 h-96 w-full rounded-xl object-contain md:h-auto lg:order-last lg:mb-0 lg:w-1/4'
+						className='order-first mb-10 h-96 w-full rounded-xl object-contain shadow-md md:h-auto lg:order-last lg:mb-0 lg:w-1/4'
 					/>
 				</div>
 				<div className='mt-10 w-full lg:mt-20'>
