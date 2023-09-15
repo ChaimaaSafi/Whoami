@@ -2,25 +2,11 @@ import React, { useEffect, useState } from 'react'
 import Image from 'next/future/image'
 import { NextSeo } from 'next-seo'
 import Link from 'next/link'
-import axios from 'axios'
 import profile from '../../public/assets/me.png'
 import { baseURL } from '../utils/constants/BaseURL'
 import Arrow from '../icons/Arrow'
 
 function home() {
-	const [userCountryCode, setUserCountryCode] = useState('')
-	console.log(userCountryCode)
-	useEffect(() => {
-		const fetchUserCountryCode = async () => {
-			try {
-				const response = await axios.get('/api/get-country-code')
-				setUserCountryCode(response.data)
-			} catch (error) {
-				console.error(error)
-			}
-		}
-		fetchUserCountryCode()
-	}, [])
 	return (
 		<>
 			<NextSeo title='Home' canonical={`${baseURL}/home`} />
